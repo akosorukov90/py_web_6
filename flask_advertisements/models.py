@@ -23,13 +23,6 @@ class BaseModelMixin:
         except exc.IntegrityError:
             raise errors.BadLuck
 
-    def update(self):
-        db.session.update(self)
-        try:
-            db.session.commit()
-        except exc.IntegrityError:
-            raise errors.BadLuck
-
     def delete(self):
         db.session.delete(self)
         try:
