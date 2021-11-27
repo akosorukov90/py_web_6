@@ -1,0 +1,48 @@
+#Пользователи
+###
+GET http://127.0.0.1:5000/users/1
+Content-Type: application/json
+
+###
+POST http://127.0.0.1:5000/users/
+Content-Type: application/json
+
+{
+  "username": "user_3",
+  "password": "121wr345DF1qqwew",
+  "email": "user_3@mail.ru"
+}
+
+#Объявления
+###
+GET http://127.0.0.1:5000/advertisements/17
+Content-Type: application/json
+
+
+###
+POST http://127.0.0.1:5000/advertisements/
+Content-Type: application/json
+username: user_1
+password: 121wr345DF1qqwew
+
+{
+    "title": "Продаю новый смартфон новый",
+    "description": "Характеристики смартфона такие"
+}
+
+###
+PUT http://127.0.0.1:5000/advertisements/17
+Content-Type: application/json
+username: user_3
+password: 121wr345DF1qqwew
+
+{
+    "title": "Продаю новый смартфон новый23",
+    "description": "Характеристики смартфона такие23"
+}
+
+###
+DELETE http://127.0.0.1:5000/advertisements/17
+Content-Type: application/json
+username: user_1
+password: 121wr345DF1qqwew
